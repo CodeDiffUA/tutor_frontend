@@ -12,16 +12,22 @@ const LoginItem = () => {
     const [login_data, setLogin_data] = useState({email: '', password: ''})
 
     const handleChange = (e) => {
-        console.log(e);
-        setLogin_data({...login_data, })
+        // console.log(e.target.placeholder);
+        // console.log(e.target.value);
+        setLogin_data({...login_data, [e.target.placeholder]: e.target.value})
+        // console.log(login_data)
     }
-    console.log(typeof handleChange)
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(login_data)
+    }
     return (
-        <form className={"login-item"}>
+        <form className={"login-item"} onSubmit={handleSubmit}>
             <p>Ласкаво просимо назад</p>
-            <AuthorizationInput placeholder_text={"email"} />
-            <AuthorizationInput placeholder_text={"password"} />
-            <AuthorizationSubmitButton on_submit_function={handleChange}/>
+            <AuthorizationInput placeholder_text={"email"} on_change_function={handleChange}/>
+            <AuthorizationInput placeholder_text={"password"} on_change_function={handleChange}/>
+            <AuthorizationSubmitButton/>
         </form>
     );
 };

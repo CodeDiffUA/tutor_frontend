@@ -1,3 +1,24 @@
 .login-register-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
 
+  & > button {
+    background: none;
+    border: none;
+
+    color: rgb(214, 214, 217);
+    font-family: Lora, serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: left;
+
+    & > span {
+      color: rgb(0, 170, 255);
+    }
+  }
 }

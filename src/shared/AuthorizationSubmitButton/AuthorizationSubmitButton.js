@@ -5,9 +5,9 @@ import './authorization_submit_button.scss'
 
 
 
-const AuthorizationSubmitButton = ({on_change_function}) => {
+const AuthorizationSubmitButton = ({on_submit_function}) => {
     return (
-        <button className={"authorization-submit-button"} onChange={on_change_function}>
+        <button type={"submit"} className={"authorization-submit-button"} >
             Продовжити
         </button>
     );
