@@ -1,0 +1,45 @@
+.profile-subject-syllabus-item {
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+}
+.profile-subject-syllabus-item h4 {
+  color: rgb(255, 255, 255);
+  font-family: Lora, serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 46px;
+  text-align: left;
+  min-width: 250px;
+}
+.profile-subject-syllabus-item progress {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 200px;
+  height: 26px;
+  border-radius: 15px;
+  background-color: white;
+}
+.profile-subject-syllabus-item progress::-webkit-progress-bar {
+  background-color: rgb(217, 217, 217);
+  border-radius: 15px;
+}
+.profile-subject-syllabus-item progress::-webkit-progress-value {
+  background-color: rgb(125, 90, 182);
+  border-radius: 15px;
+}
+.profile-subject-syllabus-item button {
+  cursor: pointer;
+  padding: 5px 15px;
+  border: 0;
+  border-radius: 6px;
+  background-color: rgb(96, 36, 195);
+  color: rgb(255, 255, 255);
+  font-family: Lora, serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23px;
+  text-align: left;
+}
+
+/*# sourceMappingURL=profile_subject_syllabus_item.css.map */
