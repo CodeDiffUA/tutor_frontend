@@ -1,0 +1,66 @@
+.profile-page {
+  display: flex;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-content: center;
+  margin-top: 17px;
+  padding: 0 60px 0 60px;
+  border-right: 1.5px solid rgb(177, 177, 177);
+}
+.user-info .profile-icon {
+  width: 280px;
+  height: 280px;
+  background: rgb(217, 217, 217);
+  border-radius: 50%;
+}
+.user-info h4 {
+  color: rgb(255, 255, 255);
+  font-family: Lora, serif;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: left;
+}
+.user-info .add-friend {
+  padding: 12px 70px;
+  border-radius: 10px;
+  background: rgb(214, 214, 214);
+  cursor: pointer;
+  color: rgb(29, 47, 69);
+  font-family: Lora, serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: center;
+}
+.user-info .user-info__statistic {
+  display: flex;
+  column-gap: 15px;
+  align-items: start;
+}
+.user-info .user-info__statistic > div {
+  padding: 2px 40px;
+  border-radius: 10px;
+  background: rgb(96, 36, 195);
+}
+
+.user-courses {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  padding: 60px 0 0 25px;
+}
+.user-courses p {
+  color: rgb(255, 255, 255);
+  font-family: Lora, serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 61px;
+  text-align: left;
+}
+
+/*# sourceMappingURL=profile_page.css.map */

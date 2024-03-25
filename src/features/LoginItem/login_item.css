@@ -1,0 +1,17 @@
+.login-item {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 25px;
+}
+.login-item > p {
+  color: rgb(214, 214, 214);
+  font-family: Lora, serif;
+  font-size: 33px;
+  font-weight: 600;
+  line-height: 42px;
+  text-align: left;
+}
+
+/*# sourceMappingURL=login_item.css.map */

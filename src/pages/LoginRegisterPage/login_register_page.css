@@ -1,0 +1,23 @@
+.login-register-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+}
+.login-register-page > button {
+  background: none;
+  border: none;
+  color: rgb(214, 214, 217);
+  font-family: Lora, serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 17px;
+  text-align: left;
+}
+.login-register-page > button > span {
+  color: rgb(0, 170, 255);
+}
+
+/*# sourceMappingURL=login_register_page.css.map */
