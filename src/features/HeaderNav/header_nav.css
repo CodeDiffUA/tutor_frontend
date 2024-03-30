@@ -1,0 +1,41 @@
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 40px 40px 40px;
+  align-items: center;
+  border-bottom: 1px solid rgb(214, 214, 214);
+}
+.header-nav .logo {
+  color: rgb(255, 169, 1);
+  font-family: Lora, serif;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: left;
+}
+.header-nav nav {
+  display: flex;
+  align-items: center;
+  column-gap: 60px;
+}
+.header-nav nav p {
+  margin: 0;
+  color: rgb(251, 252, 252);
+  font-family: Lora, serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 51px;
+  text-align: left;
+}
+.header-nav nav > div {
+  display: flex;
+  column-gap: 25px;
+}
+.header-nav .profile-icon {
+  width: 60px;
+  height: 60px;
+  background: rgb(217, 217, 217);
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=header_nav.css.map */
