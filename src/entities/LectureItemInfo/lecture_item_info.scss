@@ -1,0 +1,33 @@
+.lecture-item-info {
+  border: 2px solid rgb(127, 127, 127);
+  padding: 10px 30px;
+  //width: ;
+
+  display: flex;
+  //column-gap: 200px;
+  justify-content: space-between;
+
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      padding-left: 10px;
+
+    }
+    & > h3 {
+      color: rgb(255, 255, 255);
+      font-family: Lora, serif;
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 38px;
+      text-align: left;
+    }
+  }
+
+}

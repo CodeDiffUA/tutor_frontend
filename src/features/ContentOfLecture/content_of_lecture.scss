@@ -1,0 +1,25 @@
+.content-of-lecture {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 20px;
+  width: 25%;
+  height: 90vh;
+  background: rgb(23, 27, 54);
+  position: fixed;
+  top: 120px;
+  left: 0;
+  bottom: 0;
+
+  h3 {
+    color: rgb(255, 255, 255);
+    font-family: Lora, serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 41px;
+    text-align: left;
+  }
+
+  
+
+}
