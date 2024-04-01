@@ -1,0 +1,19 @@
+
+.study-progress {
+  -webkit-appearance: none;
+  appearance: none;
+
+  width: 200px;
+  height: 26px;
+  border-radius: 15px;
+  background-color: white;
+
+}
+.study-progress::-webkit-progress-bar {
+  background-color: rgb(217, 217, 217);;
+  border-radius: 15px;
+}
+.study-progress::-webkit-progress-value {
+  background-color: rgb(4, 170, 109);
+  border-radius: 15px;
+}
