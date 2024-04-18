@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import './login_register_page.scss'
-import AuthorizationInput from "../../shared/AuthorizationInput/AuthorizationInput";
 import LoginItem from "../../features/LoginItem/LoginItem";
 import RegisterItem from "../../features/RegisterItem/RegisterItem";
 

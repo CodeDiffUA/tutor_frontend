@@ -1,0 +1,47 @@
+.lecture-info-block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  padding: 20px;
+  border: 1px solid rgb(121, 128, 133);
+  border-radius: 4px;
+  color: rgb(255, 255, 255);
+  font-family: IBM Plex Sans;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 34px;
+  text-align: left;
+}
+.lecture-info-block > div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.lecture-info-block > div strong {
+  color: white;
+  font-size: 32px;
+}
+.lecture-info-block > div img {
+  width: 80%;
+  border-radius: 6px;
+  opacity: 0.8;
+}
+.lecture-info-block strong {
+  color: rgb(4, 170, 109);
+}
+.lecture-info-block ul {
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.lecture-info-block li {
+  list-style-type: circle;
+}
+.lecture-info-block li li {
+  list-style-type: square;
+}
+
+/*# sourceMappingURL=lecture_info_block.css.map */

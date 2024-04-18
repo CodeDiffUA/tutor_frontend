@@ -5,7 +5,8 @@
 }
 
 .App {
-    background: linear-gradient(90.00deg, rgb(36, 59, 85),rgb(20, 30, 48) 98.594%);
+    /*background: linear-gradient(90.00deg, rgb(36, 59, 85),rgb(20, 30, 48) 98.594%);*/
+    background: #1D2A35;
     width: 100%;
     min-height: 100vh;
     display: flex;

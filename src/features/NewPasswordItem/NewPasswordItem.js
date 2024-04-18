@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import './new_password_item.scss';
 
 const NewPasswordItem = () => {

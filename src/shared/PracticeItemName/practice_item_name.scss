@@ -4,19 +4,27 @@
   align-items: center;
   padding: 15px;
   min-width: 400px;
-  background: rgb(16, 33, 52);
+  background: rgb(27, 35, 51);
   border-radius: 8px;
 
   .content {
     display: flex;
-    flex-direction: column;
-    row-gap: 15px;
+    //flex-direction: column;
+    gap: 15px;
+
+    h5 {
+      font-size: 28px;
+    }
     
   }
   .vertical-line {
-    padding: 30px 0 30px 30px;
+    padding: 0 0 0 15px;
     border-left: 1.5px solid rgba(177, 177, 177, 0.3);
-    width: 30%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
 
     h5 {
       text-align: center;
@@ -29,6 +37,5 @@
     font-size: 24px;
     font-weight: 400;
     line-height: 38px;
-    //text-align: left;
   }
 }

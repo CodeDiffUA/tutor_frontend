@@ -1,5 +1,6 @@
 import React from 'react';
 import './wave_item.scss'
+
 const WaveItem = () => {
     return (
         <div className={'wave-item'}>

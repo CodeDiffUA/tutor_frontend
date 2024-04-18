@@ -1,13 +1,17 @@
 .green-button {
-  padding: 5px 25px;
+  padding: 2px 8px;
   border-radius: 5px;
   background: rgb(4, 170, 109);
   cursor: pointer;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
 
-  color: rgb(255, 255, 255);
-  font-family: Lora, serif;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 26px;
-  text-align: left;
+  h5 {
+    width: fit-content;
+    color: rgb(255, 255, 255);
+    font-family: Lora, serif;
+    font-size: 18px;
+    font-weight: 600;
+  }
 }

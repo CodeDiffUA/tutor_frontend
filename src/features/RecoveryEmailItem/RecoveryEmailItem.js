@@ -1,5 +1,6 @@
 import React from 'react';
 import './recovery_email_item.scss';
+
 const RecoveryEmailItem = () => {
     return (
         <div className={'recovery-email'}>

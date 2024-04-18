@@ -8,7 +8,8 @@ import './header_nav.scss'
 const HeaderNav = () => {
     return (
         <div className={'header-nav'}>
-            <div className={'logo'}>logo</div>
+            {/*<div className={'logo'}>logo</div>*/}
+            <h6>dropdown</h6>
             <nav>
                 <div>
                     <img src={icon_notification}/>

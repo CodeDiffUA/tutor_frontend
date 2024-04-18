@@ -1,6 +1,7 @@
 import React from 'react';
 import './search_bar.scss'
 import search from './images/search.svg'
+
 const SearchBar = () => {
     return (
         <div className={'search-bar'}>

@@ -1,10 +1,14 @@
 import React, {useState} from 'react';
 import AuthorizationInput from "../../shared/AuthorizationInput/AuthorizationInput";
 import AuthorizationSubmitButton from "../../shared/AuthorizationSubmitButton/AuthorizationSubmitButton";
+import {useDispatch} from "react-redux";
+import {registration} from "../../store";
 
 const RegisterItem = () => {
 
     const [login_data, setLogin_data] = useState({email: '', password: '', name: ''})
+
+    const dispatch = useDispatch();
 
     const handleChange = (e) => {
         // console.log(e.target.placeholder);
@@ -16,6 +20,14 @@ const RegisterItem = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(login_data)
+
+        dispatch(registration({
+            username: "bodya",
+            email: "shraierbodya@gmail.com",
+            password: "karpatyLviv",
+            form: "FIFTH",
+            age: 17
+        }))
     }
 
     return (

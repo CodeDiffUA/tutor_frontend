@@ -1,34 +1,51 @@
-import './App.css';
-import LoginRegisterPage from "../pages/LoginRegisterPage/LoginRegisterPage";
-import HeaderNav from "../features/HeaderNav/HeaderNav";
-import ProfilePage from "../pages/ProfilePage/ProfilePage";
-import ScrollSubjectsBar from "../features/ScrollSubjectsBar/ScrollSubjectsBar";
+import React from "react";
+import {useDispatch, useSelector} from "react-redux";
+import {Route, Routes} from "react-router-dom"
 import HomePage from "../pages/HomePage/HomePage";
-import {Form, Route, Routes} from "react-router-dom";
 import Layout from "../pages/Layout/Layout";
-import LecturePage from "../pages/LectionPage/LecturePage";
-import ForgotPasswordPage from "../pages/ForgotPasswordPage/ForgotPasswordPage";
-import RecoverPasswordPage from "../pages/RecoverPasswordPage/RecoverPasswordPage";
+import './App.css';
+import LectureLayout from "../pages/LectureLayout/LectureLayout";
+import LectureItemContent from "../features/LectureItemContent/LectureItemContent";
+import LectureContentPage from "../pages/LectureContentPage/LectureContentPage";
+
 function App() {
+
+    const {isAuth} = useSelector(( state => state.authReducer))
+
+    const dispatch = useDispatch();
+
+    // useEffect(() => {
+    //     console.log(isAuth)
+    //
+    //     if (localStorage.getItem('token')) {
+    //         console.log('homepage')
+    //         console.log(localStorage.getItem('token'));
+    //         dispatch(checkAuth())
+    //     }
+    //     console.log(isAuth)
+    // }, [])
+
+
+    // if (!isAuth) {
+    //     return (
+    //         <div className="App">
+    //             <LoginRegisterPage />
+    //         </div>
+    //     );
+    // }
+
     return (
         <div className="App">
-            {/*<HeaderNav />*/}
-            {/*<ScrollSubjectsBar />*/}
-            {/*<HomePage />*/}
-            {/*<LoginRegisterPage />*/}
-            {/*<ProfilePage />*/}
-            <RecoverPasswordPage />
-
-
-
-
-            {/*<Routes>*/}
-            {/*    <Route path={'/'} element={<Layout />}>*/}
-            {/*        <Route index element={<HomePage />}/>*/}
-            {/*        <Route path={'subjects/:id'} element={<LecturePage />}/>*/}
-
-            {/*    </Route>*/}
-            {/*</Routes>*/}
+            {/*{!isAuth&&<LoginRegisterPage />}*/}
+            {!isAuth&&<Routes>
+                <Route path={'/'} element={<Layout/>}>
+                    <Route index element={<HomePage/>} />
+                    <Route path={'subjects/:id'} element={<LectureLayout/>}>
+                        <Route index element={<LectureItemContent/>} />
+                        <Route path={':lecture_name'} element={<LectureContentPage />}/>
+                    </Route>
+                </Route>
+            </Routes>}
         </div>
     );
 }

@@ -1,0 +1,11 @@
+.lecture-layout {
+  display: flex;
+  position: relative;
+}
+.lecture-layout > *:nth-child(2) {
+  width: 75%;
+  margin: 0 0 0 25%;
+  padding: 30px;
+}
+
+/*# sourceMappingURL=lecture_layout.css.map */
