@@ -1,6 +1,7 @@
 import React from 'react';
 import './scroll_subjects_bar.scss'
 import {Link} from "react-router-dom";
+
 const ScrollSubjectsBar = () => {
     return (
         <div className={'scroll-subjects-bar'}>

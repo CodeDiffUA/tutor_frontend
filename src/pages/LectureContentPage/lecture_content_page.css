@@ -1,0 +1,7 @@
+.lecture-content-page {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+
+/*# sourceMappingURL=lecture_content_page.css.map */

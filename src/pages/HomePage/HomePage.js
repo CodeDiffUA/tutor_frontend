@@ -5,6 +5,9 @@ import SearchBar from "../../features/SearchBar/SearchBar";
 import WaveItem from "../../features/WaveItem/WaveItem";
 
 const HomePage = () => {
+
+    console.log(localStorage)
+
     return (
         <div className={'home-page'}>
             <SearchBar />

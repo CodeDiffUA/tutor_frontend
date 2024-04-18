@@ -8,9 +8,8 @@
   //position: fixed;
   //top: 0;
   //left: 0;
-  //z-index: 1;
-
-  background: linear-gradient(90.00deg, rgb(36, 59, 85),rgb(20, 30, 48) 98.594%);
+  background: rgb(27 35 51);
+  //background: linear-gradient(90.00deg, rgb(36, 59, 85),rgb(20, 30, 48) 98.594%);
   border-bottom: 1px solid rgb(214, 214, 214);
 
 
@@ -32,9 +31,8 @@
       margin: 0;
       color: rgb(251, 252, 252);
       font-family: Lora, serif;
-      font-size: 40px;
+      font-size: 34px;
       font-weight: 500;
-      line-height: 51px;
       text-align: left;
 
     }
@@ -42,6 +40,8 @@
     & > div {
       display: flex;
       column-gap: 25px;
+      justify-content: center;
+      align-items: center;
     }
   }
 
