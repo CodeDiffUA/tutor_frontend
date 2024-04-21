@@ -6,6 +6,7 @@ import {login} from "../../store";
 import AuthorizationInput from "../../shared/AuthorizationInput/AuthorizationInput";
 import AuthorizationSubmitButton from "../../shared/AuthorizationSubmitButton/AuthorizationSubmitButton";
 import './login_item.scss'
+import AuthTextField from "../../shared/AuthTextFiled/AuthTextFiled";
 
 
 const LoginItem = () => {
@@ -48,16 +49,28 @@ const LoginItem = () => {
 
     return (
         <>
-            <form className={"login-item"}>
+            <form className={"login-item"} onSubmit={handleSubmit}>
                 <p>Ласкаво просимо назад</p>
-                <AuthorizationInput placeholder_text={"email"}
-                                    on_change_function={(e) => setUsernameOrEmail(e.target.value)}/>
-                <AuthorizationInput placeholder_text={"password"}
-                                    on_change_function={(e) => setPassword(e.target.value)}/>
+                <AuthTextField
+                    text={'Email'}
+                    width={'320px'}
+                    type={'text'}
+                    onChange={(e) => setUsernameOrEmail(e.target.value)}
+                />
+                <AuthTextField
+                    text={'Password'}
+                    width={'320px'}
+                    type={'text'}
+                    onChange={(e) => setPassword(e.target.value)}
+                />
+                {/*<AuthorizationInput placeholder_text={"email"}*/}
+                {/*                    on_change_function={(e) => setUsernameOrEmail(e.target.value)}/>*/}
+                {/*<AuthorizationInput placeholder_text={"password"}*/}
+                {/*                    on_change_function={(e) => setPassword(e.target.value)}/>*/}
                 {/*<TextField className={'authorization-input'} id="outlined-basic" label="Outlined" variant="outlined" />*/}
                 {/*<TextField className={'authorization-input'} id="outlined-basic" label="email" variant="outlined"*/}
                 {/*           sx={input_styles}/>*/}
-                <AuthorizationSubmitButton on_click={handleSubmit}/>
+                <AuthorizationSubmitButton/>
             </form>
             {/*<button onClick={fetchData}>fuck</button>*/}
 
