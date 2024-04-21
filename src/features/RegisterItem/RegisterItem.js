@@ -3,28 +3,24 @@ import AuthorizationInput from "../../shared/AuthorizationInput/AuthorizationInp
 import AuthorizationSubmitButton from "../../shared/AuthorizationSubmitButton/AuthorizationSubmitButton";
 import {useDispatch} from "react-redux";
 import {registration} from "../../store";
+import AuthTextField from "../../shared/AuthTextFiled/AuthTextFiled";
 
 const RegisterItem = () => {
 
-    const [login_data, setLogin_data] = useState({email: '', password: '', name: ''})
+    const [usernameOrEmail, setUsernameOrEmail] = useState()
+    const [password, setPassword] = useState()
+    const [name, setName] = useState()
 
     const dispatch = useDispatch();
 
-    const handleChange = (e) => {
-        // console.log(e.target.placeholder);
-        // console.log(e.target.value);
-        setLogin_data({...login_data, [e.target.placeholder]: e.target.value})
-        // console.log(login_data)
-    }
-
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(login_data)
+        console.log({usernameOrEmail, password, name})
 
         dispatch(registration({
-            username: "bodya",
-            email: "shraierbodya@gmail.com",
-            password: "karpatyLviv",
+            username: name,
+            email: usernameOrEmail,
+            password: password,
             form: "FIFTH",
             age: 17
         }))
@@ -35,9 +31,24 @@ const RegisterItem = () => {
         <div className={"register-item"}>
             <form className={"login-item"} onSubmit={handleSubmit}>
                 <p>Створіть аккаунт</p>
-                <AuthorizationInput placeholder_text={"name"} on_change_function={handleChange}/>
-                <AuthorizationInput placeholder_text={"email"} on_change_function={handleChange}/>
-                <AuthorizationInput placeholder_text={"password"} on_change_function={handleChange}/>
+                <AuthTextField
+                    text={'Email'}
+                    width={'320px'}
+                    type={'text'}
+                    onChange={(e) => setUsernameOrEmail(e.target.value)}
+                />
+                <AuthTextField
+                    text={'Password'}
+                    width={'320px'}
+                    type={'text'}
+                    onChange={(e) => setPassword(e.target.value)}
+                />
+                <AuthTextField
+                    text={'Name'}
+                    width={'320px'}
+                    type={'text'}
+                    onChange={(e) => setName(e.target.value)}
+                />
                 <AuthorizationSubmitButton/>
             </form>
         </div>

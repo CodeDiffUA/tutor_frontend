@@ -7,6 +7,7 @@ import './App.css';
 import LectureLayout from "../pages/LectureLayout/LectureLayout";
 import LectureItemContent from "../features/LectureItemContent/LectureItemContent";
 import LectureContentPage from "../pages/LectureContentPage/LectureContentPage";
+import LoginRegisterPage from "../pages/LoginRegisterPage/LoginRegisterPage";
 
 function App() {
 
@@ -26,18 +27,18 @@ function App() {
     // }, [])
 
 
-    // if (!isAuth) {
-    //     return (
-    //         <div className="App">
-    //             <LoginRegisterPage />
-    //         </div>
-    //     );
-    // }
+    if (!isAuth) {
+        return (
+            <div className="App">
+                <LoginRegisterPage />
+            </div>
+        );
+    }
 
     return (
         <div className="App">
             {/*{!isAuth&&<LoginRegisterPage />}*/}
-            {!isAuth&&<Routes>
+            {isAuth&&<Routes>
                 <Route path={'/'} element={<Layout/>}>
                     <Route index element={<HomePage/>} />
                     <Route path={'subjects/:id'} element={<LectureLayout/>}>

@@ -1,0 +1,21 @@
+.auth-textfield__label {
+  color: rgb(196, 196, 196) !important;
+}
+
+.auth-textfield__input {
+  color: rgb(189, 193, 195) !important;
+}
+
+.customTextField .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: rgb(189, 193, 195);
+}
+
+.customTextField .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: white;
+}
+
+.customTextField .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: white;
+}
+
+/*# sourceMappingURL=auth_textfiled.css.map */
