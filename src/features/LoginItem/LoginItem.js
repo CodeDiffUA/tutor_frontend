@@ -10,11 +10,11 @@ import AuthTextField from "../../shared/AuthTextFiled/AuthTextFiled";
 
 
 const LoginItem = () => {
-    // const {movies, term, status, error, currentPage} = useSelector(( state => state.movieReducer))
 
     const [usernameOrEmail, setUsernameOrEmail] = useState()
     const [password, setPassword] = useState()
 
+    // const {movies, term, status, error, currentPage} = useSelector(( state => state.movieReducer))
     const dispatch = useDispatch();
 
     const fetchData = async (e) => {

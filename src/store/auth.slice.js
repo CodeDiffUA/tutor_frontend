@@ -58,13 +58,10 @@ export const checkAuth = createAsyncThunk(
     'authSlice/checkAuth',
     async ()=>{
         try {
-            console.log(Cookies.get())
-            console.log(localStorage.getItem('token'))
-            const response = await axios.post(`${API_URL}/authentication/refresh`, {withCredentials: true, headers: {
+            const response = await axios.get(`${API_URL}/authentication/refresh`, {withCredentials: true, headers: {
                     "Content-Type": "application/json"
                 }})
             // const response = await AuthService.refresh()
-            console.log(response);
             localStorage.setItem('token', response.data.accessToken);
 
             return response
@@ -104,7 +101,9 @@ const authSlice = createSlice( {
         },
         [login.fulfilled]: (state, action) =>{
             state.status = 'fulfilled'
-            state.isAuth = true
+            if (action.payload)
+                state.isAuth = true
+            console.log(action.payload)
             // state.movies = action.payload['results']
             // state.total_pages = action.payload['total_pages']
             // console.log(state.total_pages)
@@ -154,7 +153,6 @@ const authSlice = createSlice( {
             state.error = null
         },
         [checkAuth.fulfilled]: (state, action) =>{
-            console.log(action.payload)
             state.status = 'fulfilled'
             state.isAuth = true
 

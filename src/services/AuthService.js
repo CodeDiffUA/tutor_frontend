@@ -14,6 +14,6 @@ export default class AuthService {
     }
 
     static async refresh() {
-        return $api.post('/authentication/refresh')
+        return $api.get('/authentication/refresh')
     }
 }

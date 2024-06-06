@@ -45,15 +45,17 @@
   }
 
   .user-info__statistic {
+    width: 280px;
     display: flex;
     column-gap: 15px;
     align-items: start;
+    justify-content: space-between;
 
     & > div {
       padding: 2px 40px;
       border-radius: 10px;
 
-      background: rgb(96, 36, 195);
+      background: #04AA6D;
     }
 
   }

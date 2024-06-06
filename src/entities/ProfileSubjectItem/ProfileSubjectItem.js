@@ -20,17 +20,14 @@ const ProfileSubjectItem = () => {
                     syllabus_item_name={'Фонетика'}
                     current_value={30}
                 />
-                <div><img src={down_arrow}/></div>
                 <ProfileSubjectSyllabusItem
                     syllabus_item_name={'Орфоепія'}
                     current_value={0}
                 />
-                <div><img src={down_arrow}/></div>
                 <ProfileSubjectSyllabusItem
                     syllabus_item_name={'Орфографія'}
                     current_value={77}
                 />
-                <div><img src={down_arrow}/></div>
                 <ProfileSubjectSyllabusItem
                     syllabus_item_name={'Пунктуація'}
                     current_value={90}

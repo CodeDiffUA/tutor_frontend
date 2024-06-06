@@ -7,8 +7,7 @@ const ProfileSubjectSyllabusItem = ({syllabus_item_name, current_value}) => {
     return (
         <div className={'profile-subject-syllabus-item'}>
             <h4>{syllabus_item_name}</h4>
-            {/*<progress value={current_value} max={100}></progress>*/}
-            <Progress current_value={current_value} max_value={100}></Progress>
+            <Progress current_value={current_value} max_value={100}/>
             {current_value !== 0&&<button>Продовжити</button>}
         </div>
     );

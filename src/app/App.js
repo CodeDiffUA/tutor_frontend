@@ -1,13 +1,16 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {Route, Routes} from "react-router-dom"
+import {checkAuth} from "../store";
+
 import HomePage from "../pages/HomePage/HomePage";
 import Layout from "../pages/Layout/Layout";
-import './App.css';
 import LectureLayout from "../pages/LectureLayout/LectureLayout";
 import LectureItemContent from "../features/LectureItemContent/LectureItemContent";
 import LectureContentPage from "../pages/LectureContentPage/LectureContentPage";
 import LoginRegisterPage from "../pages/LoginRegisterPage/LoginRegisterPage";
+import './App.css';
+import ProfilePage from "../pages/ProfilePage/ProfilePage";
 
 function App() {
 
@@ -15,16 +18,12 @@ function App() {
 
     const dispatch = useDispatch();
 
-    // useEffect(() => {
-    //     console.log(isAuth)
-    //
-    //     if (localStorage.getItem('token')) {
-    //         console.log('homepage')
-    //         console.log(localStorage.getItem('token'));
-    //         dispatch(checkAuth())
-    //     }
-    //     console.log(isAuth)
-    // }, [])
+    useEffect(() => {
+
+        if (localStorage.getItem('token')) {
+            dispatch(checkAuth())
+        }
+    }, [dispatch, isAuth])
 
 
     if (!isAuth) {
@@ -37,14 +36,16 @@ function App() {
 
     return (
         <div className="App">
-            {/*{!isAuth&&<LoginRegisterPage />}*/}
             {isAuth&&<Routes>
                 <Route path={'/'} element={<Layout/>}>
                     <Route index element={<HomePage/>} />
-                    <Route path={'subjects/:id'} element={<LectureLayout/>}>
+                    <Route path={'subjects/:subject'} element={<LectureLayout/>}>
                         <Route index element={<LectureItemContent/>} />
                         <Route path={':lecture_name'} element={<LectureContentPage />}/>
                     </Route>
+                    <Route path={'profile'} element={<ProfilePage/>}>
+                </Route>
+
                 </Route>
             </Routes>}
         </div>
