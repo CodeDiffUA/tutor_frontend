@@ -1,0 +1,66 @@
+{
+  "lexicology": [
+    ["Lexical_error", "Лексична помилка"],
+    ["The_lexical_meaning_of_the_word", "Лексичне значення слова"],
+    ["Synonyms", "Синоніми"]
+  ],
+  "morphology": [
+    ["Verb", "Дієслово"],
+    ["Classification_of_parts_of_language", "Класифікація частин мови"],
+    ["Noun_genus_and_number_of_nouns", "Іменник: рід і число іменників"],
+    ["Noun_Calculation_of_nouns", "Іменник: відмінювання іменників"],
+    ["Participle", "Дієприкметник"],
+    ["Noun_Writing_patronymic_names", "Іменник: написання імен по батькові"],
+    ["Adjective", "Прикметник"],
+    ["Numeral", "Числівник"],
+    ["Pronoun", "Займенник"],
+    ["Verb_adverb", "Дієприслівник"],
+    ["Adverb", "Прислівник"],
+    ["Preposition", "Прийменник"],
+    ["Fraction", "Частка"],
+    ["Conjunction", "Сполучник"]
+  ],
+  "orthography": [
+    ["Spelling_of_letters_denoting_unstressed_vowels_e,_and,_o", "Правопис літер, що позначають ненаголошені голосні е, и, о"],
+    ["Spelling_words_of_a_foreign__language_origin", "Правопис слів іншомовного походження"],
+    ["Spelling_of_prefixes", "Правопис префіксів"],
+    ["Simplification_in_groups_of_consonants", "Спрощення в групах приголосних"],
+    ["Changes_of_consonants_when_creating_words", "Зміни приголосних при творенні слів"],
+    ["Apostrophe", "Апостроф"],
+    ["A_soft_sign", "Мʼякий знак"],
+    ["Double_letters", "Подвоєння літер"],
+    ["Combine_yo,_wo", "Сполучення йо, ьо"],
+    ["Complex_words", "Складні слова"],
+    ["Big_letter_and_quotes_in_own_names", "Велика буква та лапки у власних назвах"],
+    ["Spelling_is_not_with_different_parts_of_language", "Правопис не з різними частинами мови"],
+    ["The_main_cases_of_duty_u__in,_i__th", "Основні випадки чергування у–в, і–й"]
+  ],
+  "phraseology": [
+    ["Phraseology", "Фразеологія"]
+  ],
+  "syntax_punctuation": [
+    ["Phrase", "Словосполучення"],
+    ["Secondary_members_of_the_sentence", "Другорядні члени речення"],
+    ["Classification_of_sentences", "Класифікація речень"],
+    ["Chief_members_of_the_sentence", "Головні члени речення"],
+    ["Separate_members_of_the_sentence_Separate_application", "Відокремлені члени речення: відокремлений додаток"],
+    ["Monitor_sentences", "Односкладні речення"],
+    ["Complicated_sentence_homogeneous_members_of_a_sentence", "Ускладнене речення: однорідні члени речення"],
+    ["Separate_members_of_a_sentence_Separate_definition", "Відокремлені члени речення: відокремлене означення"],
+    ["Complicated_sentence:_appeal,_insertion_words,_phrases,_sentences", "Ускладнене речення: звертання, вставні слова, словосполучення, речення"],
+    ["Complex_sentence_A_complex_non_satellite_sentence", "Складне речення: складне безсполучникове речення"],
+    ["Separate_members_of_a_sentence_A_separate_circumstance", "Відокремлені члени речення: відокремлена обставина"],
+    ["Complex_sentence:_A_complex_sentence", "Складне речення: складносурядне речення"],
+    ["Complex_sentence_A_compound_sentence", "Складне речення: складнопідрядне речення"],
+    ["Complex_sentence_complex_sentence_with_different_types_of_communication", "Складне речення: складне речення з різними видами зв’язку"],
+    ["Alien_speech", "Чуже мовлення"],
+    ["Means_of_interphrase_unity", "Засоби міжфразової єдності"]
+  ],
+  "word_structure": [
+    ["The_structure_of_the_wordWord_formation", "Будова слова. Словотвір"]
+  ],
+  "phonetics_graphics_orphoepy": [
+    ["Storage_Emphasis", "Склад. Наголос"],
+    ["The_ratio_of_sounds_and_letters", "Співвідношення звуків і букв"]
+  ]
+}

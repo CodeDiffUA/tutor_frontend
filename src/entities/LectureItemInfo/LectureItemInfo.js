@@ -5,8 +5,6 @@ import LectureItemName from "../../shared/LectureItemName/LectureItemName";
 import PracticeItemName from "../../shared/PracticeItemName/PracticeItemName";
 
 const LectureItemInfo = ({lectures, practices}) => {
-    // console.log(lectures)
-    // console.log(practices)
     return (
         <div className={'lecture-item-info'}>
             <div className={'section'}>
@@ -25,9 +23,9 @@ const LectureItemInfo = ({lectures, practices}) => {
             <div className={'section'}>
                 <h3>Практика</h3>
                 <div>
-                    {/*<PracticeItemName name={'Дзвінкі звуки'} score={5}/>*/}
-                    {/*<PracticeItemName name={'Глухі звуки'} score={9}/>*/}
-                    {/*<PracticeItemName name={'Дзвінкі звуки'} score={-1}/>*/}
+                    {practices.map((value, index) => (
+                        <PracticeItemName key={index} en_name={value[0]} ukr_name={value[1]} score={-1}/>
+                    ))}
 
                 </div>
             </div>

@@ -11,6 +11,7 @@ import LectureContentPage from "../pages/LectureContentPage/LectureContentPage";
 import LoginRegisterPage from "../pages/LoginRegisterPage/LoginRegisterPage";
 import './App.css';
 import ProfilePage from "../pages/ProfilePage/ProfilePage";
+import PracticePage from "../pages/PracticePage/PracticePage";
 
 function App() {
 
@@ -42,9 +43,10 @@ function App() {
                     <Route path={'subjects/:subject'} element={<LectureLayout/>}>
                         <Route index element={<LectureItemContent/>} />
                         <Route path={':lecture_name'} element={<LectureContentPage />}/>
+                        <Route path={'practices/:practice_name'} element={<PracticePage/>}/>
                     </Route>
-                    <Route path={'profile'} element={<ProfilePage/>}>
-                </Route>
+                        <Route path={'profile'} element={<ProfilePage/>}>
+                    </Route>
 
                 </Route>
             </Routes>}

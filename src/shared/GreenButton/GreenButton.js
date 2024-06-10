@@ -2,9 +2,9 @@ import React from 'react';
 
 import './green_button.scss'
 
-const GreenButton = ({text}) => {
+const GreenButton = ({text, ...props}) => {
     return (
-        <div className={'green-button'}>
+        <div {...props} className={'green-button'}>
             <h5>{text}</h5>
         </div>
     );

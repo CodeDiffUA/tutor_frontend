@@ -7,6 +7,14 @@ import {useDispatch, useSelector} from "react-redux";
 import {getContentOfGlobalName} from "../../store";
 
 
+import practices_list from './practices_list.json'
+
+
+const name_transition = {
+    "Phonetics. Graphics. Orthoepy": "phonetics_graphics_orphoepy",
+    "Orthography": "orthography"
+}
+
 const LectureItemContent = () => {
 
     const {active_global_name, global_name_content} = useSelector(( state => state.lectureReducer))
@@ -18,7 +26,6 @@ const LectureItemContent = () => {
         }
 
     }, [JSON.stringify(active_global_name)]);
-
 
     return (
         <div className={'lecture-item-content'}>
@@ -34,7 +41,7 @@ const LectureItemContent = () => {
             </div>}
             {Object.keys(global_name_content).length !== 0&&<LectureItemInfo
                 lectures={global_name_content.content.lectures}
-                practices={global_name_content.content.practices}
+                practices={practices_list[name_transition[active_global_name[0]]]}
             />}
         </div>
     );

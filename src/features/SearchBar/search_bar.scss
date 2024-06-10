@@ -9,6 +9,7 @@
   & > div {
     display: flex;
     background: none;
+    scale: 80%;
     input {
       width: 600px;
       color: rgb(102, 102, 102);
@@ -34,7 +35,7 @@
   h3 {
     color: rgb(255, 255, 255);
     font-family: Lora, serif;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 600;
     line-height: 77px;
     text-align: left;
@@ -43,7 +44,7 @@
   h5 {
     color: rgb(255, 255, 255);
     font-family: Lora, serif;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600;
     line-height: 51px;
     text-align: center;

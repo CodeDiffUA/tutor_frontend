@@ -4,7 +4,7 @@ import './content_of_lecture.scss'
 import SubjectChapterInfo from "../../entities/SubjectChapterInfo/SubjectChapterInfo";
 import {useDispatch, useSelector} from "react-redux";
 import {getSidebarInfo, setActiveGlobalName} from "../../store";
-import {useParams, useSearchParams} from "react-router-dom";
+import {useParams} from "react-router-dom";
 
 
 const ContentOfLecture = () => {
